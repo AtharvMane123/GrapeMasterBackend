@@ -1,0 +1,7 @@
+flask
+ultralytics
+torch
+torchvision
+onnxruntime
+pillow
+numpy
