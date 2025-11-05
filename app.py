@@ -8,7 +8,7 @@ app = Flask(__name__)
 # ==============================
 # Load Model (Auto-detect type)
 # ==============================
-MODEL_PATH = r"C:\Users\manea\Downloads\QCommerce Papers\grape_project_data\grape_project_data\runs\classify\grape_classifier_10_epoch_test\weights\best.engine"
+MODEL_PATH = r"best.pt"
 
 print(f"Loading model from: {MODEL_PATH}")
 if MODEL_PATH.endswith(".engine"):
@@ -67,3 +67,4 @@ def predict():
 # ==============================
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000, debug=True)
+
